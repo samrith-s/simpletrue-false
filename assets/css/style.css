@@ -1,11 +1,13 @@
 #quiz {
-    background: #02f785;
+/*    background: #02f785;*/
     width:100%;
     height:25%;
     display: block;
 }
 
 #knowmore, #options { display:none; }
+
+.no-click { pointer-events: none; }
 
 #statement-area {
     width: 40%;
@@ -15,6 +17,7 @@
     background: black;
     color: white;
     display: table;
+    cursor: move;
 }
 
 #statement-area span {
@@ -24,12 +27,13 @@
     text-align: center;
     width:90%;
     padding: 5%;
+    cursor: move;
 }
 
 #buckets {
     display:block;
     top:25%;
-    background: #f7e202;
+/*    background: #f7e202;*/
     width:100%;
     height:75%;
 }
@@ -49,18 +53,50 @@
     text-align: center;
     width:88%;
     padding:3%;
+    height: 35px;
     margin:3%;
+    display: table;
+}
+
+#bucket1 ul li span, #bucket2 ul li span {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #bucket1, #bucket2 {
     margin: 5%;
     height: 85%;
     width: 40%;
-    background: #9e1a00;
+    border:5px #fff solid;
+    border-top: 0;
+/*    background: #9e1a00;*/
 }
 
+.hover-class-bucket {
+    border:5px #e000c6 solid;
+    border-top: 0;
+}
 #bucket2 {
     left:50%;
+}
+
+#messages {
+    background: rgba(1,1,1,0.7);
+    color: #fff;
+    display: none;
+    width:100%;
+    height: 100%;
+}
+
+#messageBox {
+    width: 90%;
+    padding: 5%;
+    top:40%;
+    height:5%;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
     
