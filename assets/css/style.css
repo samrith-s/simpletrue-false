@@ -1,0 +1,67 @@
+#quiz {
+    background: #02f785;
+    width:100%;
+    height:25%;
+    display: block;
+}
+
+#knowmore, #options { display:none; }
+
+#statement-area {
+    width: 40%;
+    margin:2% 0;
+    left:30%;
+    height:80%;
+    background: black;
+    color: white;
+    display: table;
+}
+
+#statement-area span {
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width:90%;
+    padding: 5%;
+}
+
+#buckets {
+    display:block;
+    top:25%;
+    background: #f7e202;
+    width:100%;
+    height:75%;
+}
+
+#bucket1 ul, #bucket2 ul {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    color: white;
+}
+
+#bucket1 ul li, #bucket2 ul li { 
+    background: black;
+    list-style-type: none; 
+    text-align: center;
+    width:88%;
+    padding:3%;
+    margin:3%;
+}
+
+#bucket1, #bucket2 {
+    margin: 5%;
+    height: 85%;
+    width: 40%;
+    background: #9e1a00;
+}
+
+#bucket2 {
+    left:50%;
+}
+
+    
+    
