@@ -34,7 +34,6 @@ function playGame(quesbank) {
         $("#statement-area").fadeIn(600);
         $("#statement-area").removeClass("no-click");
         var question = quesbank.pop();
-        console.log(question);
         Question.showQuizPanel(quiz, question);
         var pos = $("#statement-area").position();
         setDroppable(question, pos);
@@ -55,7 +54,6 @@ function setDroppable(question, pos) {
 function droppableCases(num, question, pos) {
         $("#statement-area").removeClass("draggable1 draggable2");
         var class_ = "draggable" + num;
-        console.log(class_);
         $("#statement-area").addClass(class_);
         $("#bucket" + num).droppable({
             accept: "." + class_,
